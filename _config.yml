@@ -3,7 +3,7 @@ email: marina.witherell@outlook.com
 timezone: PST
 baseurl: ""
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
+logo: '"assets/images/letter_m_PNG40.png"'
 favicon: 'assets/images/favicon.ico'
 author: Marina Witherell
 paginate: 30
