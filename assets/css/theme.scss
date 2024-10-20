@@ -8,8 +8,10 @@ $blue:    #3d61fd !default;
 
 @import 'bootstrap/bootstrap';
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 /* add additional CSS rules below */
 html {
@@ -20,16 +22,22 @@ body {
     background:#fff;
     font-size:17px;
     transition: all 200ms linear;
-    font-family: "PT Sans",sans-serif;
+    // font-family: "PT Sans",sans-serif;
+    font-family: "DM Sans", sans-serif;
     line-height:1.7;
     color: #333;
     overflow-x:hidden;
     padding-top:116px;
     
 }
-.serif-font {
-    font-family:PT Serif;
-}
+// .serif-font {
+//     font-family:PT Serif;
+// }
+.radley-regular {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 @media (max-width: 1366px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         width:90%;
@@ -543,7 +551,7 @@ background-color: #fff;
 
 .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
     font-weight: 600;
-    font-family: PT Sans;
+    font-family: DM Sans;
     margin-top: 3rem;
 }
 
