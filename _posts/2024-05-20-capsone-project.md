@@ -14,4 +14,4 @@ The microbial profile of the skin and fecal samples will be significantly differ
 [Click here for a link to the presentation](https://docs.google.com/presentation/d/1fZmr2ymkOLyvNtkIfDHpjl4-RNXTrDlWzIB4tBHta8A/edit?usp=sharing) 
 
 ## Report
-[Click here to see the full report]({{ site.baseurl }}{% link pages/capstone_report.md %})
+<a href="{{site.baseurl}}/capstone_report" class="btn btn-dark text-white px-5 btn-lg">Full Report</a>
