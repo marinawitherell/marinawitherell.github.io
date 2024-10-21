@@ -10,22 +10,22 @@ by Marina Witherell and Vini Karumuru
 
 <a id="table-of-contents"></a>
 ## 0 - Table of Contents
-0. [Table of Contents](#table-of-contents)
+0 [Table of Contents](#table-of-contents)
 1. [Introduction](#introduction)
 2. [Hypothesis](#hypothesis)
-    2.1 [Hypothesis 1](#hypothesis-1)
-    2.2 [Hypothesis 2](#hypothesis-2)
+    - 2.1 [Hypothesis 1](#hypothesis-1)
+    - 2.2 [Hypothesis 2](#hypothesis-2)
 3. [Methods](#methods)
-    3.0 [Common Methods](#common-methods)
-    3.1 [Methods for Hypothesis 1](#methods-1)
-    3.2 [Methods for Hypothesis 2](#methods-2)
-    3.3 [Methods for Further Exploration of Top Taxa](#methods-3)
+    - 3.0 [Common Methods](#common-methods)
+    - 3.1 [Methods for Hypothesis 1](#methods-1)
+    - 3.2 [Methods for Hypothesis 2](#methods-2)
+    - 3.3 [Methods for Further Exploration of Top Taxa](#methods-3)
 4. [Results](#results)
-    4.1. [Results for Hypothesis 1](#results-1)
-    4.2. [Results for Hypothesis 2](#results-2)
-    4.3. [Results for Further Exploration of Top Taxa](#results-3)
+    - 4.1. [Results for Hypothesis 1](#results-1)
+    - 4.2. [Results for Hypothesis 2](#results-2)
+    - 4.3. [Results for Further Exploration of Top Taxa](#results-3)
 5. [Discussion](#discussion)
-    5.1 [Further Directions](#further-directions)
+    - 5.1 [Further Directions](#further-directions)
 6. [References](#references)
 
 <a id="introduction"></a>
@@ -33,6 +33,7 @@ by Marina Witherell and Vini Karumuru
 Type 2 diabetes (T2D) is a significant health issue in the US. In 2022, the CDC reported 10.7% of adults had type 2 diabetes. There are also an estimated 8.5 million undiagnosed cases, and 79 million cases of pre-diabetes with 50% of these cases converting to a lifetime of diabetes. There has been notice of differences of gut microbiome between diabetic and non-diabetic people, which has been observed to have an effect on glucose levels (Stanford Medicine). This project hopes to better understand the changes of the microbiome during diabetic onset and progression. The microbiomes of the nasal samples and those of the fecal samples and the relationship between the two sample types are of prime interest. \
 The dataset used in this project was taken from the NIH’s Integrated Human Genome Project. Due to limited computational resources, a randomly sampled subset of 1000 samples was taken from the original dataset for our analysis. Our dataset contains samples from 77 pre-diabetic patients. A patient is considered to be pre-diabetic when their fasting blood sugar level is higher than normal but is not high enough to be considered diabetic (this would mean a fasting blood sugar level of 100-125 mg/dL) (Maruthur, 2023). Samples were collected from the patients at two body sites: the feces and the nasal cavity. The dataset contained 465 fecal samples and 535 nasal samples. Most patients had samples taken during more than one timepoint, hence why there are many more samples than there are patients. The microbial DNA was extracted from these samples and underwent 16S amplicon sequencing (Stanford Medicine). As our dataset only contained data from pre-diabetic patients, with no set of control, healthy patients, the focus of our analysis was to compare the fecal and nasal microbiomes of these pre-diabetic patients.
 
+***
 
 <a id="hypothesis"></a>
 ## 2 - Hypothesis
@@ -44,6 +45,7 @@ The fecal microbiome is more diverse than the nasal microbiome in pre-diabetic p
 ### 2.2 Hypothesis 2
 The microbial profile of the skin and fecal samples will be significantly different when using the beta diversity measure. If it is found significant, I will focus on the most abundant taxa and identify the group that explains the differences.
 
+***
 
 <a id="methods"></a>
 ## 3 - Methods
@@ -68,4 +70,19 @@ I decided that the best way to do this would be to find the top ten OTUs from th
 To further expand our analysis, I decided that it might be interesting to dive deeper into the top 20 OTUs we had identified to be the most abundant in each body site. More specifically, I wanted to see if there were any trends in the abundances of these top taxa among many patients. 
 I began by removing any patients that did not have samples taken from both body sites. 65 patients remained after doing so. Then, because the dataset contained multiple samples per patient, I averaged each patient’s reads at each body site. For each of the top 10 fecal OTUs, I conducted a one-sided paired Wilcoxon rank-sum test where the mean abundance of this OTU in each patient’s feces was paired with the mean abundance of this OTU at their nasal cavity. I was testing the null hypothesis that the median abundance of the OTU in the feces is either less than or no different from the median abundance of the OTU in the nasal cavity. I repeated this process for the top 10 nasal OTUs (but flipping the body sites in the null hypothesis, to test whether the abundance of these nasal OTUs was significantly greater in the nasal cavity compared to the feces). For any of these one-sided rank-sum tests that resulted in a non-significant p-value (p > 0.05), I conducted a paired two-sided rank-sum test to see if there was any difference between the body sites. The ggpaired() function within the ggpubr package was utilized to plot paired boxplots for each of the top 20 taxa. For the purpose of better visualization, I log-scaled the mean abundance so that more of the data points would be discernible. I used the plot_list() function within the cowplot package to combine multiple of the individual OTU plots into a single figure so that these plots could be more easily compared to one another.
 
+***
 
+<a id="results"></a>
+## 4 - Results
+### 4.1 Results for Hypothesis 1
+<p>
+<img src="{{site.baseurl}}/assets/images/fig_4.1.1.png">
+<em>
+*Figure 4.1.1 Table of Median Alpha Diversity Measures by Body Site.* Each column is a body site.The first row contains median species richness (the number of OTUs detected in a sample) and second row contains the median Shannon Index (which takes into account both species richness and species evenness).</em>
+</p>
+<p>
+<img src="{{site.baseurl}}/assets/images/fig_4.1.2.png">
+<em>
+*Figure 4.1.2 Side-by-Side Boxplots of Shannon Indexes At Each Body Site.* Each datapoint represents a sample, with the left boxplot displaying samples from the feces and the right boxplot displaying samples from the nasal cavity. A two-sided, unpaired Wilcoxon rank-sum test yielded a p-value many orders of magnitude lower than 0.05.</em>
+</p>
+The fecal samples had higher alpha diversity values overall. This is supported by the fact that the median species richness in the fecal samples is more than twice the species richness in the nasal samples (Figure 4.1.1), meaning each sample tended to have a greater number of OTUs detected. Additionally, the fecal samples had a set of significantly higher Shannon indexes when compared to the nasal samples (p < 2.2e-16), which is indicative of greater diversity. 
