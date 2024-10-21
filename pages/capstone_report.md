@@ -75,14 +75,14 @@ I began by removing any patients that did not have samples taken from both body 
 <a id="results"></a>
 ## 4 - Results
 ### 4.1 Results for Hypothesis 1
-<p>
-<img src="{{site.baseurl}}/assets/images/fig_4.1.1.png">
-<em>
-*Figure 4.1.1 Table of Median Alpha Diversity Measures by Body Site.* Each column is a body site.The first row contains median species richness (the number of OTUs detected in a sample) and second row contains the median Shannon Index (which takes into account both species richness and species evenness).</em>
-</p>
+<figure>
+    <img src="{{site.baseurl}}/assets/images/fig_4.1.1.png">
+    <figcaption>
+    <strong>Figure 4.1.1 Table of Median Alpha Diversity Measures by Body Site.</strong> Each column is a body site.The first row contains median species richness (the number of OTUs detected in a sample) and second row contains the median Shannon Index (which takes into account both species richness and species evenness).</figcaption>
+</figure>
 <p>
 <img src="{{site.baseurl}}/assets/images/fig_4.1.2.png">
 <em>
-*Figure 4.1.2 Side-by-Side Boxplots of Shannon Indexes At Each Body Site.* Each datapoint represents a sample, with the left boxplot displaying samples from the feces and the right boxplot displaying samples from the nasal cavity. A two-sided, unpaired Wilcoxon rank-sum test yielded a p-value many orders of magnitude lower than 0.05.</em>
+<strong>Figure 4.1.2 Side-by-Side Boxplots of Shannon Indexes At Each Body Site.</strong> Each datapoint represents a sample, with the left boxplot displaying samples from the feces and the right boxplot displaying samples from the nasal cavity. A two-sided, unpaired Wilcoxon rank-sum test yielded a p-value many orders of magnitude lower than 0.05.</em>
 </p>
 The fecal samples had higher alpha diversity values overall. This is supported by the fact that the median species richness in the fecal samples is more than twice the species richness in the nasal samples (Figure 4.1.1), meaning each sample tended to have a greater number of OTUs detected. Additionally, the fecal samples had a set of significantly higher Shannon indexes when compared to the nasal samples (p < 2.2e-16), which is indicative of greater diversity. 
