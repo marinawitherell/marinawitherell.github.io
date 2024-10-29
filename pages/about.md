@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: "/about/"
-image: assets/images/about_pic.jpg
+image: assets/images/about_pic.JPG
 ---
 
 Hello, my name is **Marina Witherell**.
