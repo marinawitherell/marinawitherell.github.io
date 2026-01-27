@@ -2,7 +2,7 @@
 layout: post
 title:  "Arabidopsis thaliana root RNA-seq Dashboard"
 categories: [ Rmarkdown, Shiny ]
-image: assets/images/capstone.png
+image: assets/images/umap_image.png
 ---
 
 # Dashboard Report 
