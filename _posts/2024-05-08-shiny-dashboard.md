@@ -32,12 +32,12 @@ The client requested UMAP and PCA visualizations to quickly identify and compare
 This dashboard is designed to analyze plant single-cell RNA-seq data, detailing its functionalities, and visualizing the provided dataset to help the client draw meaningful biological conclusions. The client conducted single-cell RNA-seq on cells from *Arabidopsis Thaliana* root to monitor its development through visual representations. These visualizations were developed using a ShinyApp application, which ensured that the images were cohesive and easy to understand, allowing the client to draw effective conclusions from their results. This is especially important because single-cell RNA-seq datasets are inherently large and complex, making it challenging to derive clear insights. Although the client provided pre-clustered data, our task was to identify similarities and differences between the clusters.\
 \
 By carefully addressing our client’s requirements, we ensured that the dashboard would be a valuable tool for the client, providing clear visualizations and insights into the complex single-cell RNA-seq data of *Arabidopsis Thaliana* roots. This comprehensive approach allows the client to make informed decisions and draw significant conclusions from their research data.
-\
+
 
 <a id="product-description"></a>
 ## 2 - Product Description
 To meet our client’s needs, we produced a ShinyApp. It was important that it be interactive so that the client could visually see the differences between different graphs (depending on their clusters, markers, PCA, etc.). This was done using the ggplot package for all of the plots and figures. The structure of the app itself consists of three tabs, created using the tabsetPanel method. Each of these tabs were then further divided into columns using the fluidRow method. The first tab consists of both a UMAP and PCA scatterplot, the second tab contains a heat map and bar chart, and the third tab holds two different subtabs that display the presence of putative and anticipated markers in each cluster. We decided to break up these tasks in order to optimize efficiency.
-\
+
 
 <a id="umap-pca"></a>
 ### 2.1 - UMAP and PCA with Clusters
@@ -48,7 +48,7 @@ In the first tab of our interactive Shiny application, the client provided the U
     <strong>Figure 1</strong> PCA graph
 </figcaption>
 </figure>
-\
+
 
 <a id="cluster-coorelation"></a>
 ### 2.2 - Cluster Coorelation
@@ -59,7 +59,7 @@ In the second tab of our interactive Shiny App, we displayed a bar chart where e
     <strong>Figure 2</strong> Heatmap graph
 </figcaption>
 </figure>
-\
+
 
 <a id="umap-markers"></a>
 ### 2.3 - UMAP Markers
@@ -70,7 +70,7 @@ In the third tab, we implemented a slightly different structure than had been pr
     <strong>Figure 3</strong> UMAP graph
 </figcaption>
 </figure>
-\
+
 
 <a id="dev-narrative"></a>
 ## 3 - Development Narrative
@@ -81,7 +81,7 @@ Our second tab features a bar chart and a square heat map. The bar chart allows 
 In our third tab, we created a UMAP plot to display the gene expression levels of the gene markers. This tab took the most time to complete as it required a different approach than initially planned. One of the challenges concerned the best way to display the different markers. Given the large number of markers provided by the client, categorized as ‘anticipated markers’ and ‘putative markers,’ it was decided that we would create two subtabs within the third tab. Each subtab contains a dropdown menu with the markers (either anticipated or putative) This allows users to switch between marker categories easily, making it simpler to distinguish between them and display changes accordingly. We also encountered an issue with the structure of the putative and anticipated marker files provided by the client. Each of the files were formatted differently, which made it difficult to use both for the same purpose (i.e. using the same code). To resolve this, we manipulated the anticipated marker file to match the structure of the putative marker file. This enabled us to display the graphs according to the marker, cell barcode, and cluster size to compute the expression value.\
 \
 We believe that the end result fully meets the client’s requests and specifications in regards to the details of the structure and execution. This application enables the client to visualize the single-cell RNA-seq dataset of *Arabidopsis Thaliana* root effectively. We believe that the comparative analysis between clusters offers valuable insights into the relevance and significance of cluster distinctions, providing visual interpretations that can guide decision-making. Furthermore, by maintaining consistency throughout our application, we have ensured that the client’s requirements, specifications, and research needs are met. The cohesive design and functionality of the application create visualizations that not only enhance engagement but also increase satisfaction in their research. Through this comprehensive tool, the client can explore their dataset more deeply, gaining meaningful insights and making informed decisions based on the visualized data.
-\
+
 
 <a id="conclusion"></a>
 ## 4 - Conclusion
