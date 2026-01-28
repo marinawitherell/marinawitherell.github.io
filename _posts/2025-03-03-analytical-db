@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Analytical DB and BI"
+categories: [ PowerBI ]
+image: power_bi_rport.png
+---
+## Summary
+Adventure Bikes is a company that sells bike products. Using a SQL file containing data on the company's products, customers, and sales, I created a database and created a BI Report using PowerBI to analyze sales as a visualization. 
+
+<figure>
+    <img src="{{site.baseurl}}/assets/images/analytical_db_schema.png">
+    <figcaption>
+    <strong>Figure 1</strong> Schema of the Data Base
+</figcaption>
+</figure>
+
+<figure>
+    <img src="{{site.baseurl}}/assets/images/power_bi_report.png">
+    <figcaption>
+    <strong>Figure 2</strong> PowerBI Report
+</figcaption>
+</figure>
