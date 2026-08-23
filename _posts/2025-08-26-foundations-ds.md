@@ -8,7 +8,7 @@ image: assets/images/capstone.png
 Projects that show the foundational skills needed for data analysis.
 
 ## Project 1: Exploratory Data Analysis
-<a href="{{site.baseurl}}/pages/Project1-ExploratoryDataAnalysis.pdf" class="btn btn-dark text-white px-5 btn-lg">
+<a href="{{site.baseurl}}/Project1-ExploratoryDataAnalysis" class="btn btn-dark text-white px-5 btn-lg">
 Take me to project 1!</a>
 
 ## Project 2: Inference and Linear Models
