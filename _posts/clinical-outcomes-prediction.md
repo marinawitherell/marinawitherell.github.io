@@ -1,4 +1,11 @@
-# Clinical Outcomes Prediction
+---
+layout: post
+title:  "Clinical Outcomes Prediction"
+categories: [ MatPlotLib, Pandas, NumPy, Scikit-learn, SHAP, Streamlit ]
+image: assets/images/umap_image.png
+---
+
+# Predicting Hypertension Risk
 A machine‑learning dashboard for predicting hypertension risk with patient‑level SHAP interpretability.
 
 ## Overview
