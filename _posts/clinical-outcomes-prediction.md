@@ -2,7 +2,7 @@
 layout: post
 title:  "Clinical Outcomes Prediction"
 categories: [ MatPlotLib, Pandas, NumPy, Scikit-learn, SHAP, Streamlit ]
-image: assets/images/umap_image.png
+image: assets/images/clinical-pred/dashboard5.png
 ---
 
 # Predicting Hypertension Risk
@@ -378,7 +378,7 @@ plt.show()
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_5_0.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_5_0.png)
     
 
 
@@ -412,7 +412,7 @@ plt.show()
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_8_0.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_8_0.png)
     
 
 
@@ -435,7 +435,7 @@ plt.show()
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_10_0.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_10_0.png)
     
 
 
@@ -458,7 +458,7 @@ plt.show()
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_13_0.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_13_0.png)
     
 
 
@@ -579,7 +579,7 @@ plt.show()
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_26_0.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_26_0.png)
     
 
 
@@ -611,7 +611,7 @@ shap.summary_plot(shap_values, X_test_df, plot_type="bar")
 
 
     
-![png](hypertension%20copy_files/hypertension%20copy_31_1.png)
+![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_31_1.png)
     
 
 
