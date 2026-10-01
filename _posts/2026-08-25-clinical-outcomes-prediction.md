@@ -381,7 +381,6 @@ plt.show()
     <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_5_0.png">
 </figure>
     
-![png](assets/images/clinical-pred/hypertensioncopy_5_0.png)
     
 
 
@@ -413,9 +412,10 @@ plt.ylabel('Ratio of Hypertension Cases')
 plt.show()
 ```
 
+<figure>
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_8_0.png">
+</figure>
 
-    
-![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_8_0.png)
     
 
 
@@ -437,8 +437,9 @@ plt.show()
 ```
 
 
-    
-![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_10_0.png)
+<figure>
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_10_0.png">
+</figure>
     
 
 
@@ -459,9 +460,10 @@ plt.title('Correlation Heatmap')
 plt.show()
 ```
 
+<figure>
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_13_0.png">
+</figure>
 
-    
-![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_13_0.png)
     
 
 
@@ -580,9 +582,10 @@ plt.title("Feature Importance for Hypertension Prediction")
 plt.show()
 ```
 
-
+<figure>
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_26_0.png">
+</figure>
     
-![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_26_0.png)
     
 
 
@@ -613,8 +616,9 @@ shap.summary_plot(shap_values, X_test_df, plot_type="bar")
      99%|===================| 2048/2064 [01:27<00:00]        
 
 
-    
-![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_31_1.png)
+<figure>
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertensioncopy_31_1.png">
+</figure>
     
 
 
