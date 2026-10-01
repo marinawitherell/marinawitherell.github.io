@@ -378,7 +378,7 @@ plt.show()
 
 
 <figure>
-    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_5_0.png">
+    <img src="{{site.baseurl}}/assets/images/clinical-pred/hypertension20copy_5_0.png">
 </figure>
     
 ![png](assets/images/clinical-pred/hypertension%20copy_files/hypertension%20copy_5_0.png)
